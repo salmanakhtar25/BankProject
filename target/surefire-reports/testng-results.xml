@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+    <line>
+      <![CDATA[Framework execution starts:Fri Aug 28 19:35:44 IST 2020]]>
+    </line>
+    <line>
+      <![CDATA[validLoginscript execution startsFri Aug 28 19:36:09 IST 2020]]>
+    </line>
+    <line>
+      <![CDATA[Guru99 Bank Manager HomePage]]>
+    </line>
+    <line>
+      <![CDATA[validLoginscript is passed]]>
+    </line>
+    <line>
+      <![CDATA[InvalidLoginscript execution startsFri Aug 28 19:36:49 IST 2020]]>
+    </line>
+    <line>
+      <![CDATA[User is not valid]]>
+    </line>
+    <line>
+      <![CDATA[InvalidLoginscript is passed]]>
+    </line>
+    <line>
+      <![CDATA[addnewCustomerscript execution startsFri Aug 28 19:37:01 IST 2020]]>
+    </line>
+    <line>
+      <![CDATA[Your Customer Id is 15531]]>
+    </line>
+    <line>
+      <![CDATA[addnewCustomerscript is passed]]>
+    </line>
+    <line>
+      <![CDATA[editcustomerscript execution startsFri Aug 28 19:37:29 IST 2020]]>
+    </line>
+    <line>
+      <![CDATA[Customer details updated Successfully!!!]]>
+    </line>
+    <line>
+      <![CDATA[editcustomerscript is passed]]>
+    </line>
+    <line>
+      <![CDATA[createAccountscript execution startsFri Aug 28 19:37:54 IST 2020]]>
+    </line>
+    <line>
+      <![CDATA[your account number is 82808]]>
+    </line>
+    <line>
+      <![CDATA[createAccountscript is passed]]>
+    </line>
+    <line>
+      <![CDATA[deleteAccountscript execution startsFri Aug 28 19:38:12 IST 2020]]>
+    </line>
+    <line>
+      <![CDATA[Account Deleted Sucessfully]]>
+    </line>
+    <line>
+      <![CDATA[deleteAccountscript is passed]]>
+    </line>
+    <line>
+      <![CDATA[deletecustomerscript execution startsFri Aug 28 19:38:28 IST 2020]]>
+    </line>
+    <line>
+      <![CDATA[Customer deleted Successfully]]>
+    </line>
+    <line>
+      <![CDATA[deletecustomerscript is passed]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="169005" started-at="2020-08-28T14:05:44Z" finished-at="2020-08-28T14:08:33Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="169005" started-at="2020-08-28T14:05:44Z" finished-at="2020-08-28T14:08:33Z">
+      <class name="com.GtplBank.scripts.AccountTest">
+        <test-method status="PASS" signature="precondition(java.lang.String, java.lang.String)[pri:0, instance:com.GtplBank.scripts.AccountTest@6442b0a6]" name="precondition" is-config="true" duration-ms="12849" started-at="2020-08-28T19:37:41Z" finished-at="2020-08-28T19:37:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://demo.guru99.com/v3/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method status="PASS" signature="createAccount()[pri:5, instance:com.GtplBank.scripts.AccountTest@6442b0a6]" name="createAccount" duration-ms="7750" started-at="2020-08-28T19:37:54Z" finished-at="2020-08-28T19:38:02Z">
+          <reporter-output>
+            <line>
+              <![CDATA[createAccountscript execution startsFri Aug 28 19:37:54 IST 2020]]>
+            </line>
+            <line>
+              <![CDATA[your account number is 82808]]>
+            </line>
+            <line>
+              <![CDATA[createAccountscript is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createAccount -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.GtplBank.scripts.AccountTest@6442b0a6]" name="postCondition" is-config="true" duration-ms="516" started-at="2020-08-28T19:38:02Z" finished-at="2020-08-28T19:38:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method status="PASS" signature="precondition(java.lang.String, java.lang.String)[pri:0, instance:com.GtplBank.scripts.AccountTest@6442b0a6]" name="precondition" is-config="true" duration-ms="9736" started-at="2020-08-28T19:38:02Z" finished-at="2020-08-28T19:38:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://demo.guru99.com/v3/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method status="PASS" signature="deleteAccount()[pri:6, instance:com.GtplBank.scripts.AccountTest@6442b0a6]" name="deleteAccount" duration-ms="5368" started-at="2020-08-28T19:38:12Z" finished-at="2020-08-28T19:38:17Z">
+          <reporter-output>
+            <line>
+              <![CDATA[deleteAccountscript execution startsFri Aug 28 19:38:12 IST 2020]]>
+            </line>
+            <line>
+              <![CDATA[Account Deleted Sucessfully]]>
+            </line>
+            <line>
+              <![CDATA[deleteAccountscript is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteAccount -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.GtplBank.scripts.AccountTest@6442b0a6]" name="postCondition" is-config="true" duration-ms="479" started-at="2020-08-28T19:38:17Z" finished-at="2020-08-28T19:38:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.GtplBank.scripts.AccountTest -->
+      <class name="com.GtplBank.scripts.LoginTest">
+        <test-method status="PASS" signature="precondition(java.lang.String, java.lang.String)[pri:0, instance:com.GtplBank.scripts.LoginTest@35f983a6]" name="precondition" is-config="true" duration-ms="24750" started-at="2020-08-28T19:35:44Z" finished-at="2020-08-28T19:36:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://demo.guru99.com/v3/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method status="PASS" signature="validLogin()[pri:1, instance:com.GtplBank.scripts.LoginTest@35f983a6]" name="validLogin" duration-ms="24567" started-at="2020-08-28T19:36:09Z" finished-at="2020-08-28T19:36:33Z">
+          <reporter-output>
+            <line>
+              <![CDATA[validLoginscript execution startsFri Aug 28 19:36:09 IST 2020]]>
+            </line>
+            <line>
+              <![CDATA[Guru99 Bank Manager HomePage]]>
+            </line>
+            <line>
+              <![CDATA[validLoginscript is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.GtplBank.scripts.LoginTest@35f983a6]" name="postCondition" is-config="true" duration-ms="927" started-at="2020-08-28T19:36:33Z" finished-at="2020-08-28T19:36:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method status="PASS" signature="precondition(java.lang.String, java.lang.String)[pri:0, instance:com.GtplBank.scripts.LoginTest@35f983a6]" name="precondition" is-config="true" duration-ms="14647" started-at="2020-08-28T19:36:34Z" finished-at="2020-08-28T19:36:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://demo.guru99.com/v3/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method status="PASS" signature="InvalidLogin()[pri:2, instance:com.GtplBank.scripts.LoginTest@35f983a6]" name="InvalidLogin" duration-ms="1362" started-at="2020-08-28T19:36:49Z" finished-at="2020-08-28T19:36:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[InvalidLoginscript execution startsFri Aug 28 19:36:49 IST 2020]]>
+            </line>
+            <line>
+              <![CDATA[User is not valid]]>
+            </line>
+            <line>
+              <![CDATA[InvalidLoginscript is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- InvalidLogin -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.GtplBank.scripts.LoginTest@35f983a6]" name="postCondition" is-config="true" duration-ms="225" started-at="2020-08-28T19:36:50Z" finished-at="2020-08-28T19:36:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.GtplBank.scripts.LoginTest -->
+      <class name="com.GtplBank.scripts.CustomerFeatureTest">
+        <test-method status="PASS" signature="precondition(java.lang.String, java.lang.String)[pri:0, instance:com.GtplBank.scripts.CustomerFeatureTest@60f82f98]" name="precondition" is-config="true" duration-ms="10713" started-at="2020-08-28T19:36:50Z" finished-at="2020-08-28T19:37:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://demo.guru99.com/v3/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method status="PASS" signature="addnewCustomer()[pri:3, instance:com.GtplBank.scripts.CustomerFeatureTest@60f82f98]" name="addnewCustomer" duration-ms="12833" started-at="2020-08-28T19:37:01Z" finished-at="2020-08-28T19:37:14Z">
+          <reporter-output>
+            <line>
+              <![CDATA[addnewCustomerscript execution startsFri Aug 28 19:37:01 IST 2020]]>
+            </line>
+            <line>
+              <![CDATA[Your Customer Id is 15531]]>
+            </line>
+            <line>
+              <![CDATA[addnewCustomerscript is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addnewCustomer -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.GtplBank.scripts.CustomerFeatureTest@60f82f98]" name="postCondition" is-config="true" duration-ms="920" started-at="2020-08-28T19:37:14Z" finished-at="2020-08-28T19:37:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method status="PASS" signature="precondition(java.lang.String, java.lang.String)[pri:0, instance:com.GtplBank.scripts.CustomerFeatureTest@60f82f98]" name="precondition" is-config="true" duration-ms="13751" started-at="2020-08-28T19:37:15Z" finished-at="2020-08-28T19:37:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://demo.guru99.com/v3/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method status="PASS" signature="editcustomer()[pri:4, instance:com.GtplBank.scripts.CustomerFeatureTest@60f82f98]" name="editcustomer" duration-ms="11999" started-at="2020-08-28T19:37:29Z" finished-at="2020-08-28T19:37:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[editcustomerscript execution startsFri Aug 28 19:37:29 IST 2020]]>
+            </line>
+            <line>
+              <![CDATA[Customer details updated Successfully!!!]]>
+            </line>
+            <line>
+              <![CDATA[editcustomerscript is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- editcustomer -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.GtplBank.scripts.CustomerFeatureTest@60f82f98]" name="postCondition" is-config="true" duration-ms="633" started-at="2020-08-28T19:37:41Z" finished-at="2020-08-28T19:37:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method status="PASS" signature="precondition(java.lang.String, java.lang.String)[pri:0, instance:com.GtplBank.scripts.CustomerFeatureTest@60f82f98]" name="precondition" is-config="true" duration-ms="10051" started-at="2020-08-28T19:38:18Z" finished-at="2020-08-28T19:38:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://demo.guru99.com/v3/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method status="PASS" signature="deletecustomer()[pri:7, instance:com.GtplBank.scripts.CustomerFeatureTest@60f82f98]" name="deletecustomer" duration-ms="4563" started-at="2020-08-28T19:38:28Z" finished-at="2020-08-28T19:38:33Z">
+          <reporter-output>
+            <line>
+              <![CDATA[deletecustomerscript execution startsFri Aug 28 19:38:28 IST 2020]]>
+            </line>
+            <line>
+              <![CDATA[Customer deleted Successfully]]>
+            </line>
+            <line>
+              <![CDATA[deletecustomerscript is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deletecustomer -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.GtplBank.scripts.CustomerFeatureTest@60f82f98]" name="postCondition" is-config="true" duration-ms="293" started-at="2020-08-28T19:38:33Z" finished-at="2020-08-28T19:38:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.GtplBank.scripts.CustomerFeatureTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

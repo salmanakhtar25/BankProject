@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Aug 28 19:35:44 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>169 seconds (169005 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.GtplBank.scripts.LoginTest.InvalidLogin()'><b>InvalidLogin</b><br>Test class: com.GtplBank.scripts.LoginTest<br/>
+<a href="#Output-673672784" onClick='toggleBox("Output-673672784", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-673672784" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-673672784">
+InvalidLoginscript execution startsFri Aug 28 19:36:49 IST 2020<br/>
+User is not valid<br/>
+InvalidLoginscript is passed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.GtplBank.scripts.LoginTest@35f983a6</td></tr>
+<tr>
+<td title='com.GtplBank.scripts.CustomerFeatureTest.addnewCustomer()'><b>addnewCustomer</b><br>Test class: com.GtplBank.scripts.CustomerFeatureTest<br/>
+<a href="#Output-748006558" onClick='toggleBox("Output-748006558", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-748006558" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-748006558">
+addnewCustomerscript execution startsFri Aug 28 19:37:01 IST 2020<br/>
+Your Customer Id is 15531<br/>
+addnewCustomerscript is passed<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.GtplBank.scripts.CustomerFeatureTest@60f82f98</td></tr>
+<tr>
+<td title='com.GtplBank.scripts.AccountTest.createAccount()'><b>createAccount</b><br>Test class: com.GtplBank.scripts.AccountTest<br/>
+<a href="#Output-573023937" onClick='toggleBox("Output-573023937", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-573023937" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-573023937">
+createAccountscript execution startsFri Aug 28 19:37:54 IST 2020<br/>
+your account number is 82808<br/>
+createAccountscript is passed<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.GtplBank.scripts.AccountTest@6442b0a6</td></tr>
+<tr>
+<td title='com.GtplBank.scripts.AccountTest.deleteAccount()'><b>deleteAccount</b><br>Test class: com.GtplBank.scripts.AccountTest<br/>
+<a href="#Output-596299019" onClick='toggleBox("Output-596299019", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-596299019" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-596299019">
+deleteAccountscript execution startsFri Aug 28 19:38:12 IST 2020<br/>
+Account Deleted Sucessfully<br/>
+deleteAccountscript is passed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.GtplBank.scripts.AccountTest@6442b0a6</td></tr>
+<tr>
+<td title='com.GtplBank.scripts.CustomerFeatureTest.deletecustomer()'><b>deletecustomer</b><br>Test class: com.GtplBank.scripts.CustomerFeatureTest<br/>
+<a href="#Output-368603167" onClick='toggleBox("Output-368603167", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-368603167" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-368603167">
+deletecustomerscript execution startsFri Aug 28 19:38:28 IST 2020<br/>
+Customer deleted Successfully<br/>
+deletecustomerscript is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.GtplBank.scripts.CustomerFeatureTest@60f82f98</td></tr>
+<tr>
+<td title='com.GtplBank.scripts.CustomerFeatureTest.editcustomer()'><b>editcustomer</b><br>Test class: com.GtplBank.scripts.CustomerFeatureTest<br/>
+<a href="#Output-2112135199" onClick='toggleBox("Output-2112135199", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2112135199" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2112135199">
+editcustomerscript execution startsFri Aug 28 19:37:29 IST 2020<br/>
+Customer details updated Successfully!!!<br/>
+editcustomerscript is passed<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.GtplBank.scripts.CustomerFeatureTest@60f82f98</td></tr>
+<tr>
+<td title='com.GtplBank.scripts.LoginTest.validLogin()'><b>validLogin</b><br>Test class: com.GtplBank.scripts.LoginTest<br/>
+<a href="#Output-215082566" onClick='toggleBox("Output-215082566", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-215082566" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-215082566">
+validLoginscript execution startsFri Aug 28 19:36:09 IST 2020<br/>
+Guru99 Bank Manager HomePage<br/>
+validLoginscript is passed<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>com.GtplBank.scripts.LoginTest@35f983a6</td></tr>
+</table><p>
+</body>
+</html>

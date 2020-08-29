@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.GtplBank.generic.MyTestListener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="url" value="http://demo.guru99.com/v3/index.php"/>
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.GtplBank.scripts.AccountTest">
+        <methods>
+          <include name="postCondition"/>
+          <include name="deleteAccount"/>
+          <include name="precondition"/>
+          <include name="createAccount"/>
+        </methods>
+      </class> <!-- com.GtplBank.scripts.AccountTest -->
+      <class name="com.GtplBank.scripts.CustomerFeatureTest">
+        <methods>
+          <include name="postCondition"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- com.GtplBank.scripts.CustomerFeatureTest -->
+      <class name="com.GtplBank.scripts.LoginTest">
+        <methods>
+          <include name="postCondition"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- com.GtplBank.scripts.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
