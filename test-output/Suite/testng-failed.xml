@@ -11,15 +11,14 @@
       <class name="com.GtplBank.scripts.AccountTest">
         <methods>
           <include name="postCondition"/>
-          <include name="deleteAccount"/>
           <include name="precondition"/>
-          <include name="createAccount"/>
         </methods>
       </class> <!-- com.GtplBank.scripts.AccountTest -->
       <class name="com.GtplBank.scripts.CustomerFeatureTest">
         <methods>
           <include name="postCondition"/>
           <include name="precondition"/>
+          <include name="deletecustomer"/>
         </methods>
       </class> <!-- com.GtplBank.scripts.CustomerFeatureTest -->
       <class name="com.GtplBank.scripts.LoginTest">

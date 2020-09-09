@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 29 13:09:01 IST 2020</td>
+<td>Started on:</td><td>Wed Sep 09 16:26:29 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>311 seconds (311238 ms)</td>
+<tr><td>Total time:</td><td>389 seconds (389723 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,25 +75,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.GtplBank.scripts.AccountTest.createAccount()'><b>createAccount</b><br>Test class: com.GtplBank.scripts.AccountTest<br/>
-<a href="#Output-246014273" onClick='toggleBox("Output-246014273", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.GtplBank.scripts.CustomerFeatureTest.deletecustomer()'><b>deletecustomer</b><br>Test class: com.GtplBank.scripts.CustomerFeatureTest<br/>
+<a href="#Output-1583816224" onClick='toggleBox("Output-1583816224", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-246014273" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-246014273">
-createAccountscript execution startsSat Aug 29 13:11:18 IST 2020<br/>
-createAccount script is failed<br/>
+<a href="#Output-1583816224" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1583816224">
+deletecustomerscript execution startsWed Sep 09 16:32:04 IST 2020<br/>
+deletecustomer script is failed<br/>
 Screenshot has been taken<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.heading3&quot;}
-  (Session info: chrome=84.0.4147.135)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;cusid&apos;]&quot;}
+  (Session info: chrome=85.0.4183.83)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-VC35D2RP&apos;, ip: &apos;192.168.43.59&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\salmank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f5c991c9b97bce9a7dcce9ce3d9121c2
-*** Element info: {Using=class name, value=heading3}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\salmank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58470}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bfedacfc8058a52771803b81598e2424
+*** Element info: {Using=name, value=cusid}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -101,24 +101,24 @@ Session ID: f5c991c9b97bce9a7dcce9ce3d9121c2
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.getText(Unknown Source)
-	at com.GtplBank.features.AccountFeatures.CreateNewAccount(AccountFeatures.java:35)
-	at com.GtplBank.scripts.AccountTest.createAccount(AccountTest.java:20)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace246014273", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace246014273'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.heading3&quot;}
-  (Session info: chrome=84.0.4147.135)
+	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
+	at com.GtplBank.features.CustomerFeatures.DeleteCustomer(CustomerFeatures.java:116)
+	at com.GtplBank.scripts.CustomerFeatureTest.deletecustomer(CustomerFeatureTest.java:34)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1583816224", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1583816224'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;cusid&apos;]&quot;}
+  (Session info: chrome=85.0.4183.83)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-VC35D2RP&apos;, ip: &apos;192.168.43.59&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\salmank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f5c991c9b97bce9a7dcce9ce3d9121c2
-*** Element info: {Using=class name, value=heading3}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\salmank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58470}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bfedacfc8058a52771803b81598e2424
+*** Element info: {Using=name, value=cusid}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -130,14 +130,14 @@ Session ID: f5c991c9b97bce9a7dcce9ce3d9121c2
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.getText(Unknown Source)
-	at com.GtplBank.features.AccountFeatures.CreateNewAccount(AccountFeatures.java:35)
-	at com.GtplBank.scripts.AccountTest.createAccount(AccountTest.java:20)
+	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
+	at com.GtplBank.features.CustomerFeatures.DeleteCustomer(CustomerFeatures.java:116)
+	at com.GtplBank.scripts.CustomerFeatureTest.deletecustomer(CustomerFeatureTest.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -164,100 +164,8 @@ Session ID: f5c991c9b97bce9a7dcce9ce3d9121c2
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
-<td>70</td>
-<td>com.GtplBank.scripts.AccountTest@14acaea5</td></tr>
-<tr>
-<td title='com.GtplBank.scripts.AccountTest.deleteAccount()'><b>deleteAccount</b><br>Test class: com.GtplBank.scripts.AccountTest<br/>
-<a href="#Output-2083106248" onClick='toggleBox("Output-2083106248", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2083106248" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2083106248">
-deleteAccountscript execution startsSat Aug 29 13:13:22 IST 2020<br/>
-deleteAccount script is failed<br/>
-Screenshot has been taken<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;accountno&apos;]&quot;}
-  (Session info: chrome=84.0.4147.135)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-VC35D2RP&apos;, ip: &apos;192.168.43.59&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\salmank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56831}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e2f7f9aae201948a80b4b7ee84bc031b
-*** Element info: {Using=name, value=accountno}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
-	at com.GtplBank.features.AccountFeatures.DeleteAccount(AccountFeatures.java:47)
-	at com.GtplBank.scripts.AccountTest.deleteAccount(AccountTest.java:30)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2083106248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2083106248'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;accountno&apos;]&quot;}
-  (Session info: chrome=84.0.4147.135)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-VC35D2RP&apos;, ip: &apos;192.168.43.59&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\salmank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56831}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e2f7f9aae201948a80b4b7ee84bc031b
-*** Element info: {Using=name, value=accountno}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
-	at com.GtplBank.features.AccountFeatures.DeleteAccount(AccountFeatures.java:47)
-	at com.GtplBank.scripts.AccountTest.deleteAccount(AccountTest.java:30)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</pre></div></td>
-<td>23</td>
-<td>com.GtplBank.scripts.AccountTest@14acaea5</td></tr>
+<td>31</td>
+<td>com.GtplBank.scripts.CustomerFeatureTest@46d56d67</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -268,30 +176,30 @@ Session ID: e2f7f9aae201948a80b4b7ee84bc031b
 </tr>
 <tr>
 <td title='com.GtplBank.scripts.LoginTest.InvalidLogin()'><b>InvalidLogin</b><br>Test class: com.GtplBank.scripts.LoginTest<br/>
-<a href="#Output-908722588" onClick='toggleBox("Output-908722588", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-97901029" onClick='toggleBox("Output-97901029", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-908722588" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-908722588">
-InvalidLoginscript execution startsSat Aug 29 13:10:16 IST 2020<br/>
+<a href="#Output-97901029" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-97901029">
+InvalidLoginscript execution startsWed Sep 09 16:28:33 IST 2020<br/>
 User is not valid<br/>
 InvalidLoginscript is passed<br/>
 </div>
 </td>
 <td></td>
-<td>1</td>
+<td>2</td>
 <td>com.GtplBank.scripts.LoginTest@d8355a8</td></tr>
 <tr>
 <td title='com.GtplBank.scripts.CustomerFeatureTest.addnewCustomer()'><b>addnewCustomer</b><br>Test class: com.GtplBank.scripts.CustomerFeatureTest<br/>
-<a href="#Output-1516417700" onClick='toggleBox("Output-1516417700", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1962398162" onClick='toggleBox("Output-1962398162", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1516417700" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1516417700">
-addnewCustomerscript execution startsSat Aug 29 13:10:29 IST 2020<br/>
+<a href="#Output-1962398162" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1962398162">
+addnewCustomerscript execution startsWed Sep 09 16:29:06 IST 2020<br/>
 Customer Registered Successfully!!!<br/>
 Registered Customer details are as follows:<br/>
 <br/>
 Customer ID<br/>
-49173<br/>
+9282<br/>
 Customer Name<br/>
 Salman<br/>
 Gender<br/>
@@ -318,32 +226,46 @@ addnewCustomerscript is passed<br/>
 <td>13</td>
 <td>com.GtplBank.scripts.CustomerFeatureTest@46d56d67</td></tr>
 <tr>
-<td title='com.GtplBank.scripts.CustomerFeatureTest.deletecustomer()'><b>deletecustomer</b><br>Test class: com.GtplBank.scripts.CustomerFeatureTest<br/>
-<a href="#Output-1609038183" onClick='toggleBox("Output-1609038183", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.GtplBank.scripts.AccountTest.createAccount()'><b>createAccount</b><br>Test class: com.GtplBank.scripts.AccountTest<br/>
+<a href="#Output-1155399955" onClick='toggleBox("Output-1155399955", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1609038183" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1609038183">
-deletecustomerscript execution startsSat Aug 29 13:14:05 IST 2020<br/>
-Customer deleted Successfully<br/>
-deletecustomerscript is passed<br/>
+<a href="#Output-1155399955" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1155399955">
+createAccountscript execution startsWed Sep 09 16:31:19 IST 2020<br/>
+your account number is 83485<br/>
+createAccountscript is passed<br/>
 </div>
 </td>
 <td></td>
-<td>7</td>
-<td>com.GtplBank.scripts.CustomerFeatureTest@46d56d67</td></tr>
+<td>8</td>
+<td>com.GtplBank.scripts.AccountTest@14acaea5</td></tr>
+<tr>
+<td title='com.GtplBank.scripts.AccountTest.deleteAccount()'><b>deleteAccount</b><br>Test class: com.GtplBank.scripts.AccountTest<br/>
+<a href="#Output-100703210" onClick='toggleBox("Output-100703210", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-100703210" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-100703210">
+deleteAccountscript execution startsWed Sep 09 16:31:42 IST 2020<br/>
+Account Deleted Sucessfully<br/>
+deleteAccountscript is passed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.GtplBank.scripts.AccountTest@14acaea5</td></tr>
 <tr>
 <td title='com.GtplBank.scripts.CustomerFeatureTest.editcustomer()'><b>editcustomer</b><br>Test class: com.GtplBank.scripts.CustomerFeatureTest<br/>
-<a href="#Output-1041451158" onClick='toggleBox("Output-1041451158", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-288797801" onClick='toggleBox("Output-288797801", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1041451158" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1041451158">
-editcustomerscript execution startsSat Aug 29 13:10:55 IST 2020<br/>
+<a href="#Output-288797801" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-288797801">
+editcustomerscript execution startsWed Sep 09 16:29:40 IST 2020<br/>
 Customer details updated Successfully!!!<br/>
 editcustomerscript is passed<br/>
 </div>
 </td>
 <td></td>
-<td>11</td>
+<td>69</td>
 <td>com.GtplBank.scripts.CustomerFeatureTest@46d56d67</td></tr>
 <tr>
 <td title='com.GtplBank.scripts.LoginTest.validLogin()'><b>validLogin</b><br>Test class: com.GtplBank.scripts.LoginTest<br/>
@@ -351,13 +273,13 @@ editcustomerscript is passed<br/>
 
 <a href="#Output-831654622" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-831654622">
-validLoginscript execution startsSat Aug 29 13:09:24 IST 2020<br/>
+validLoginscript execution startsWed Sep 09 16:27:38 IST 2020<br/>
 Guru99 Bank Manager HomePage<br/>
 validLoginscript is passed<br/>
 </div>
 </td>
 <td></td>
-<td>19</td>
+<td>11</td>
 <td>com.GtplBank.scripts.LoginTest@d8355a8</td></tr>
 </table><p>
 </body>

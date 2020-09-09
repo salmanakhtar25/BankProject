@@ -3,10 +3,8 @@ package com.GtplBank.generic;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 
-import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.ss.usermodel.Row;
@@ -48,34 +46,28 @@ public class ExcelUtilities {
 				break;
 		}
 		}
-		catch(EncryptedDocumentException e){
-			e.printStackTrace();
-		}
-		catch(IOException e){
+		catch(Exception e){
 			e.printStackTrace();
 		}
 		
 		return value;
 	}
 	
-	public String WriteData(int row,int cell, String accountId){
+	public String WriteData(String SheetName,int row,int cell, String value){
 		try{
 		FileInputStream fis=new FileInputStream(new File(filepath));
 		Workbook wb=WorkbookFactory.create(fis);
-		Sheet sh = wb.getSheet("Sheet2");
+		Sheet sh = wb.getSheet(SheetName);
 		Row rw = sh.getRow(row);
 		Cell cl = rw.createCell(cell);
-		cl.setCellValue(accountId);
+		cl.setCellValue(value);
 		FileOutputStream fos=new FileOutputStream(new File(filepath));
 		wb.write(fos);
 		}
-		catch(EncryptedDocumentException e){
+		catch(Exception e){
 			e.printStackTrace();
 		}
-		catch(IOException e){
-			e.printStackTrace();
-		}
-		return accountId;
+		return value;
 	}
 	
 }

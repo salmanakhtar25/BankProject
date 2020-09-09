@@ -56,7 +56,7 @@ public class CustomerFeatures {
 		Assert.assertEquals(ExpectedMsg, ActualMsg);
 		String CustId = ncp.getCustIdele().getText();
 		try{
-		eu.WriteData(1, 0, CustId);
+		eu.WriteData("Sheet2",1, 0, CustId);
 		}
 		catch(Exception e){
 			e.printStackTrace();

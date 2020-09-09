@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,12 +102,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.GtplBank.scripts.AccountTest" hash-for-method="createAccount">createAccount</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.GtplBank.scripts.AccountTest" hash-for-method="deleteAccount">deleteAccount</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.GtplBank.scripts.CustomerFeatureTest" hash-for-method="deletecustomer">deletecustomer</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -131,7 +126,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.GtplBank.scripts.CustomerFeatureTest" hash-for-method="deletecustomer">deletecustomer</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.GtplBank.scripts.AccountTest" hash-for-method="createAccount">createAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.GtplBank.scripts.AccountTest" hash-for-method="deleteAccount">deleteAccount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,56 +159,23 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.GtplBank.scripts.AccountTest</span>
+              <span class="class-name">com.GtplBank.scripts.CustomerFeatureTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createAccount">
-                  </a> <!-- createAccount -->
-                  <span class="method-name">createAccount</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.heading3&quot;}
-  (Session info: chrome=84.0.4147.135)
+                  <a name="deletecustomer">
+                  </a> <!-- deletecustomer -->
+                  <span class="method-name">deletecustomer</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;cusid&apos;]&quot;}
+  (Session info: chrome=85.0.4183.83)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-VC35D2RP&apos;, ip: &apos;192.168.43.59&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\salmank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f5c991c9b97bce9a7dcce9ce3d9121c2
-*** Element info: {Using=class name, value=heading3}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.getText(Unknown Source)
-	at com.GtplBank.features.AccountFeatures.CreateNewAccount(AccountFeatures.java:35)
-	at com.GtplBank.scripts.AccountTest.createAccount(AccountTest.java:20)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteAccount">
-                  </a> <!-- deleteAccount -->
-                  <span class="method-name">deleteAccount</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;accountno&apos;]&quot;}
-  (Session info: chrome=84.0.4147.135)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-VC35D2RP&apos;, ip: &apos;192.168.43.59&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\salmank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56831}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e2f7f9aae201948a80b4b7ee84bc031b
-*** Element info: {Using=name, value=accountno}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\salmank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58470}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bfedacfc8058a52771803b81598e2424
+*** Element info: {Using=name, value=cusid}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -222,14 +189,36 @@ Session ID: e2f7f9aae201948a80b4b7ee84bc031b
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
-	at com.GtplBank.features.AccountFeatures.DeleteAccount(AccountFeatures.java:47)
-	at com.GtplBank.scripts.AccountTest.deleteAccount(AccountTest.java:30)
+	at com.GtplBank.features.CustomerFeatures.DeleteCustomer(CustomerFeatures.java:116)
+	at com.GtplBank.scripts.CustomerFeatureTest.deletecustomer(CustomerFeatureTest.java:34)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.GtplBank.scripts.AccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAccount">
+                  </a> <!-- createAccount -->
+                  <span class="method-name">createAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteAccount">
+                  </a> <!-- deleteAccount -->
+                  <span class="method-name">deleteAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -241,13 +230,6 @@ Session ID: e2f7f9aae201948a80b4b7ee84bc031b
                   <a name="addnewCustomer">
                   </a> <!-- addnewCustomer -->
                   <span class="method-name">addnewCustomer</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="deletecustomer">
-                  </a> <!-- deletecustomer -->
-                  <span class="method-name">deletecustomer</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -342,33 +324,33 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createAccount')
-data.setCell(0, 2, 'com.GtplBank.scripts.AccountTest')
-data.setCell(0, 3, 70974);
+data.setCell(0, 1, 'editcustomer')
+data.setCell(0, 2, 'com.GtplBank.scripts.CustomerFeatureTest')
+data.setCell(0, 3, 69216);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'deleteAccount')
-data.setCell(1, 2, 'com.GtplBank.scripts.AccountTest')
-data.setCell(1, 3, 23449);
+data.setCell(1, 1, 'deletecustomer')
+data.setCell(1, 2, 'com.GtplBank.scripts.CustomerFeatureTest')
+data.setCell(1, 3, 31386);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validLogin')
-data.setCell(2, 2, 'com.GtplBank.scripts.LoginTest')
-data.setCell(2, 3, 19032);
+data.setCell(2, 1, 'addnewCustomer')
+data.setCell(2, 2, 'com.GtplBank.scripts.CustomerFeatureTest')
+data.setCell(2, 3, 13396);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'addnewCustomer')
-data.setCell(3, 2, 'com.GtplBank.scripts.CustomerFeatureTest')
-data.setCell(3, 3, 13002);
+data.setCell(3, 1, 'validLogin')
+data.setCell(3, 2, 'com.GtplBank.scripts.LoginTest')
+data.setCell(3, 3, 11281);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'editcustomer')
-data.setCell(4, 2, 'com.GtplBank.scripts.CustomerFeatureTest')
-data.setCell(4, 3, 11165);
+data.setCell(4, 1, 'createAccount')
+data.setCell(4, 2, 'com.GtplBank.scripts.AccountTest')
+data.setCell(4, 3, 8923);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'deletecustomer')
-data.setCell(5, 2, 'com.GtplBank.scripts.CustomerFeatureTest')
-data.setCell(5, 3, 7352);
+data.setCell(5, 1, 'deleteAccount')
+data.setCell(5, 2, 'com.GtplBank.scripts.AccountTest')
+data.setCell(5, 3, 5789);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'InvalidLogin')
 data.setCell(6, 2, 'com.GtplBank.scripts.LoginTest')
-data.setCell(6, 3, 1433);
+data.setCell(6, 3, 2191);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -385,25 +367,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">deletecustomer</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">deletecustomerscript execution startsSat Aug 29 13:14:05 IST 2020</span>
-                <span class="reporter-method-output">Customer deleted Successfully</span>
-                <span class="reporter-method-output">deletecustomerscript is passed</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">editcustomer</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">editcustomerscript execution startsSat Aug 29 13:10:55 IST 2020</span>
-                <span class="reporter-method-output">Customer details updated Successfully!!!</span>
-                <span class="reporter-method-output">editcustomerscript is passed</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">InvalidLogin</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">InvalidLoginscript execution startsSat Aug 29 13:10:16 IST 2020</span>
+                <span class="reporter-method-output">InvalidLoginscript execution startsWed Sep 09 16:28:33 IST 2020</span>
                 <span class="reporter-method-output">User is not valid</span>
                 <span class="reporter-method-output">InvalidLoginscript is passed</span>
               </div> <!-- reporter-method-output-div -->
@@ -411,12 +377,12 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">addnewCustomer</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">addnewCustomerscript execution startsSat Aug 29 13:10:29 IST 2020</span>
+                <span class="reporter-method-output">addnewCustomerscript execution startsWed Sep 09 16:29:06 IST 2020</span>
                 <span class="reporter-method-output">Customer Registered Successfully!!!</span>
                 <span class="reporter-method-output">Registered Customer details are as follows:</span>
                 <span class="reporter-method-output"></span>
                 <span class="reporter-method-output">Customer ID</span>
-                <span class="reporter-method-output">49173</span>
+                <span class="reporter-method-output">9282</span>
                 <span class="reporter-method-output">Customer Name</span>
                 <span class="reporter-method-output">Salman</span>
                 <span class="reporter-method-output">Gender</span>
@@ -440,26 +406,42 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
+              <span class="reporter-method-name">deleteAccount</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">deleteAccountscript execution startsWed Sep 09 16:31:42 IST 2020</span>
+                <span class="reporter-method-output">Account Deleted Sucessfully</span>
+                <span class="reporter-method-output">deleteAccountscript is passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">validLogin</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">validLoginscript execution startsSat Aug 29 13:09:24 IST 2020</span>
+                <span class="reporter-method-output">validLoginscript execution startsWed Sep 09 16:27:38 IST 2020</span>
                 <span class="reporter-method-output">Guru99 Bank Manager HomePage</span>
                 <span class="reporter-method-output">validLoginscript is passed</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">deleteAccount</span>
+              <span class="reporter-method-name">createAccount</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">deleteAccountscript execution startsSat Aug 29 13:13:22 IST 2020</span>
-                <span class="reporter-method-output">deleteAccount script is failed</span>
-                <span class="reporter-method-output">Screenshot has been taken</span>
+                <span class="reporter-method-output">createAccountscript execution startsWed Sep 09 16:31:19 IST 2020</span>
+                <span class="reporter-method-output">your account number is 83485</span>
+                <span class="reporter-method-output">createAccountscript is passed</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">createAccount</span>
+              <span class="reporter-method-name">editcustomer</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">createAccountscript execution startsSat Aug 29 13:11:18 IST 2020</span>
-                <span class="reporter-method-output">createAccount script is failed</span>
+                <span class="reporter-method-output">editcustomerscript execution startsWed Sep 09 16:29:40 IST 2020</span>
+                <span class="reporter-method-output">Customer details updated Successfully!!!</span>
+                <span class="reporter-method-output">editcustomerscript is passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">deletecustomer</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">deletecustomerscript execution startsWed Sep 09 16:32:04 IST 2020</span>
+                <span class="reporter-method-output">deletecustomer script is failed</span>
                 <span class="reporter-method-output">Screenshot has been taken</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -485,96 +467,94 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validLogin</span>
-                <span class="method-start">22594 ms</span>
+                <span class="method-start">69109 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">41629 ms</span>
+                <span class="method-start">80391 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">precondition(chrome, http://demo.guru99.com/v3/index.php)</span>
-                <span class="method-start">42070 ms</span>
+                <span class="method-start">85448 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">InvalidLogin</span>
-                <span class="method-start">74886 ms</span>
+                <span class="method-start">124070 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">76322 ms</span>
+                <span class="method-start">126265 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.GtplBank.scripts.CustomerFeatureTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">precondition(chrome, http://demo.guru99.com/v3/index.php)</span>
-                <span class="method-start">76534 ms</span>
+                <span class="method-start">138524 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addnewCustomer</span>
-                <span class="method-start">88226 ms</span>
+                <span class="method-start">157508 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">101229 ms</span>
+                <span class="method-start">170906 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">precondition(chrome, http://demo.guru99.com/v3/index.php)</span>
-                <span class="method-start">101449 ms</span>
+                <span class="method-start">172920 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">editcustomer</span>
-                <span class="method-start">114249 ms</span>
+                <span class="method-start">191620 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">125415 ms</span>
+                <span class="method-start">260839 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.GtplBank.scripts.AccountTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">precondition(chrome, http://demo.guru99.com/v3/index.php)</span>
-                <span class="method-start">125577 ms</span>
+                <span class="method-start">275262 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">createAccount</span>
-                <span class="method-start">136880 ms</span>
+                <span class="method-start">290008 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">208525 ms</span>
+                <span class="method-start">298934 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">precondition(chrome, http://demo.guru99.com/v3/index.php)</span>
-                <span class="method-start">208686 ms</span>
+                <span class="method-start">299187 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">deleteAccount</span>
-                <span class="method-start">261220 ms</span>
+                <span class="method-start">312871 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">285421 ms</span>
+                <span class="method-start">318663 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.GtplBank.scripts.CustomerFeatureTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">precondition(chrome, http://demo.guru99.com/v3/index.php)</span>
-                <span class="method-start">285738 ms</span>
+                <span class="method-start">319157 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">deletecustomer</span>
-                <span class="method-start">303629 ms</span>
+                <span class="method-start">335333 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">310983 ms</span>
+                <span class="method-start">377494 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
